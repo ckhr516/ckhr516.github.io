@@ -20,10 +20,10 @@ module.exports = {
     repo: 'https://github.com/ckhr516/ckhr516.github.io', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
-    docsDir: 'docs', // 编辑的文件夹
-    docsBranch: 'main', // 编辑的分支
-    editLinks: true, // 编辑链接
-    editLinkText: '编辑',
+    // docsDir: 'docs', // 编辑的文件夹
+    // docsBranch: 'main', // 编辑的分支
+    // editLinks: true, // 编辑链接
+    // editLinkText: '编辑',
 
     // 以下配置是Vdoing主题改动的和新增的配置
     // category: false, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
@@ -83,7 +83,7 @@ module.exports = {
   },
   plugins: [ // 插件
     [require('./plugins/love-me'), { // 鼠标点击爱心特效
-      color: '', // 爱心颜色，默认随机色 #11a8cd
+      color: '#11a8cd', // 爱心颜色，默认随机色
       excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
     }],
 
