@@ -13,5 +13,5 @@ features:
     details: 笔记力图以简洁的文字和画面表现出各知识的条理关系。
   - title: 实用
     details: 这不是百科全书，但在全面的基础上尽量展示最可能用到的部分。
-footer: Copyright © 2020-2023 chen123
+footer: Copyright © 2020-2023 chen9999new
 ---
