@@ -10,7 +10,7 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
   ],
   markdown: {
-    lineNumbers: true // 代码行号
+    lineNumbers: false,
   },
   theme: 'vdoing', // 使用依赖包主题
   themeConfig: { // 主题配置
