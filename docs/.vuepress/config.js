@@ -1,12 +1,9 @@
-const nav = require('./config/nav.js');
-
 module.exports = {
   title: "My blog",
-  description: 'web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。', // 描述,以 <meta> 标签渲染到页面html中
+  description: 'Talk is cheap. Show me the code.', // 描述,以 <meta> 标签渲染到页面html中
   base: '/', // '/<github仓库名>/'， 默认'/' 
   head: [
     ['link', { rel: 'icon', href: '/img/logo.ico' }], //favicons，资源放在public文件夹
-    ['meta', { name: 'keywords', content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
   ],
   markdown: {
@@ -14,7 +11,13 @@ module.exports = {
   },
   theme: 'vdoing', // 使用依赖包主题
   themeConfig: { // 主题配置
-    nav,
+    nav: [
+      { text: '首页', link: '/' },
+      { text: '分类', link: '/categories/' },
+      { text: '标签', link: '/tags/' },
+      { text: '归档', link: '/archives/' },
+      // { text: '关于', link: '/about/' }
+    ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
     repo: 'https://github.com/ckhr516/ckhr516.github.io', // 导航栏右侧生成Github链接
@@ -109,7 +112,7 @@ module.exports = {
       ]
     }],
 
-    // 'vuepress-plugin-baidu-autopush', // 百度自动推送
+    'vuepress-plugin-baidu-autopush', // 百度自动推送
 
     ['one-click-copy', { // 代码块复制按钮
       copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
