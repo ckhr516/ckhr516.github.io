@@ -33,4 +33,3 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           branch: my-blog # 部署到的分支
           folder: docs/.vuepress/dist # vuepress 生成的静态文件存放的地方
-          clean: true
