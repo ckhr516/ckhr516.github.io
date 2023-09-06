@@ -187,7 +187,7 @@ module.exports = {
           mini: true,        //mini版
           autoplay: true,    //自动播放
           theme: "#b7daff",  //主题颜色
-          volume: 0.05,       //音量
+          volume: 0.05,      //音量
           mutex: true,       //互斥模式
           lrcType: 3,        //歌词解析模式，默认0，想要歌词就推荐3
           listFolded: false, //折叠播放列表
