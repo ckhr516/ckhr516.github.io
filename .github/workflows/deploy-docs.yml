@@ -28,7 +28,7 @@ jobs:
 
       # 生成静态文件
       - name: Build
-        run: cat /home/runner/work/ckhr516.github.io/ckhr516.github.io/docs/随笔/7.新建测试.md && echo 'cat' && npm install && npm run build && cat /home/runner/work/ckhr516.github.io/ckhr516.github.io/docs/随笔/7.新建测试.md
+        run: npm install && npm run build && cat /home/runner/work/ckhr516.github.io/ckhr516.github.io/docs/.vuepress/dist/pages/25e52e/index.html
 
       # 部署到 GitHub Pages
       - name: Deploy
