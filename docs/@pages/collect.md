@@ -1,7 +1,7 @@
 ---
-sidebar: auto
+sidebar: true
 title: 收藏
-permalink: /collect
+permalink: /collect/
 article: false
 ---
 
