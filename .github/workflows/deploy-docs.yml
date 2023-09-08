@@ -45,8 +45,8 @@ jobs:
             ${{ runner.os }}-
           
       # 安装依赖
-      - if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
-        name: Install dependencies
+      #- if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
+      - name: Install dependencies
         run: npm install
 
       # 生成静态文件
