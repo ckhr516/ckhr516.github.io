@@ -22,7 +22,7 @@ jobs:
         with:
           # "最近更新时间"等 git 日志相关信息，需要拉取全部提交记录
           fetch-depth: 0
-          
+
       # 使用action安装node环境
       - name: Use Node.js
         uses: actions/setup-node@v3
@@ -38,11 +38,15 @@ jobs:
           key: ${{ runner.os }}-nodeModules-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-nodeModules-
-          
+
       # 安装依赖
       - if: steps.cache-node-modules.outputs.cache-hit != 'true'
         name: Install dependencies
         run: npm install
+
+      # 循环filesname
+      - name: files-name
+        run: npm run deployFilesName
 
       # 生成静态文件
       - name: Build

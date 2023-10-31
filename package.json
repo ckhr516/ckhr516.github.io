@@ -5,7 +5,8 @@
     "dev": "vuepress dev docs --temp .temp",
     "build": "vuepress build docs",
     "deploy": "powershell ./deploy.ps1",
-    "editFm": "node utils/editFrontmatter.js"
+    "editFm": "node utils/editFrontmatter.js",
+    "deployFilesName": "node utils/blogimg/blogImg.js"
   },
   "license": "MIT",
   "devDependencies": {
