@@ -1,5 +1,5 @@
 const fs = require('fs'); // 文件模块
-let rawdata = fs.readFileSync("filesName.json"); // blog-img仓库
+let rawdata = fs.readFileSync("utils/blogimg/filesName.json"); // blog-img仓库
 let filesName = JSON.parse(rawdata);
 let str = fs.readFileSync("HighLight.md", 'utf8')
 for (let i = 0; i < filesName.length; i++) {
