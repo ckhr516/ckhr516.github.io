@@ -4,9 +4,12 @@ let filesName = JSON.parse(rawdata);
 let str = fs.readFileSync("docs/随笔/HighLight.md", 'utf8')
 for (let i = 0; i < filesName.length; i++) {
   const content = `
+## ${filesName[i].slice(0, 4)}-${filesName[i].slice(4, 6)}-${filesName[i].slice(6, 8)} (${filesName[i].slice(8)})
+<p align=center>
 <video width="850" height="400" controls>
-  <source src="https://cdn.jsdelivr.net/gh/ckhr516/blog-img@main/${filesName[i]}" type="video/mp4">
+  <source src="https://cdn.jsdelivr.net/gh/ckhr516/blog-img@main/${filesName[i]}.mp4" type="video/mp4">
 </video>
+</p>
 `
   str += content
 }
