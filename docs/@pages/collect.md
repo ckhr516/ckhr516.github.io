@@ -1,5 +1,4 @@
 ---
-sidebar: true
 title: 收藏
 permalink: /collect/
 article: false
