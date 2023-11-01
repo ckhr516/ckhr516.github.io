@@ -3,6 +3,7 @@ title: HighLight
 date: 2021-03-13 00:00:00
 permalink: /pages/11591c/
 sticky: 1
+sidebar: auto
 categories:
   - 随笔
 tags:
