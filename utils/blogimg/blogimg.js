@@ -13,7 +13,6 @@ for (let i = 0; i < filesName.length; i++) {
 `
   str += content
 }
-
 fs.writeFile('docs/随笔/HighLight.md', str, function (err) {
   if (err) {
     console.log("读取失败" + err);
